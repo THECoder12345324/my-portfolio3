@@ -1,0 +1,139 @@
+body {
+    background-color: mediumaquamarine;
+    margin: 0;
+    cursor: url("img/guy3.png"), auto;
+}
+
+.container {
+    display: inline-block;
+    cursor: pointer;
+}
+.sidebar {
+    position: absolute;
+    opacity: 0;
+}
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+}
+
+.change .sidebar {
+    opacity: 100;
+}
+
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.grid img{
+    width: 200px;
+    height: 200px;
+    border-radius: 20px;
+    border-style: solid;
+}
+
+.square {
+    width: 250px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: black;
+    background-color: white;
+    border-radius: 20px;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    transition: box-shadow .3s linear .1s;
+}
+
+.square:hover {
+    box-shadow: 15px 15px 20px 10px #000;
+}
+
+
+.header {
+    border: solid;
+    display: flex;
+    justify-content: center;
+    background-color: lightslategray;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-evenly;
+    width: 1820px;
+}
+
+.block {
+    text-decoration: none;
+    font-size: 30pt;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    color: black;
+    border-color: black;
+    align-content: center;
+    transition: background-color .3s linear .1s;
+}
+
+#miniblurb {
+    font-family: cursive;
+    font-size: 35pt;
+    text-align: center;
+}
+
+.block:hover {
+    background-color: rgb(92, 106, 119);
+}
+
+#codingPlat {
+    text-align: center;
+}
+
+.platforms {
+    font-size: 30pt;
+    font-family:'Times New Roman', Times, serif;
+}
+
+.list {
+    display: flex;
+    justify-content: center;
+    font-size: 30pt;
+}
+
+.pro {
+    color: green;
+}
+.pro:hover {
+    text-transform: uppercase;
+}
+.con {
+    color: red;
+}
+.con:hover {
+    text-transform: lowercase;
+}
+.footer {
+    margin-bottom: 0;
+    text-align: center;
+}
